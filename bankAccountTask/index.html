@@ -7,6 +7,22 @@
     <script src="script.js"></script>
 </head>
 <body>
-    
+    <h2>MDFC Second Bank</h2>
+    <div>
+        <h3>Acoount Details</h3>
+        <p>Account Number: <span id="accountNumber"></span></p>
+        <p>Account HolderName: <span id="accountHolderName"></span></p>
+        <p>Account Balance: <span id="accountBalance"></span></p>
+    </div>
+    <div>
+        <form>
+            <label for="inputAmount">Enter the amount to be Deposited or Withdraw: </label>
+            <input type="number" id="inputAmount" name="Amount"><br><br>
+        </form>
+        <button onclick="deposit()">Deposit</button>
+        <button onclick="withdraw()">Withdraw</button>
+        <button onclick="checkBalance()">Check Balance</button>
+    </div>
+    <div id="result"></div>
 </body>
 </html>
