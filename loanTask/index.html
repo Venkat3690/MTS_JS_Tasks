@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Info Website</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <h1>KDFC Loan Agencies Website</h1>
+
+    <div>
+        <h3>Loan Information</h3>
+        <label for="inputPrincipalAmount">Enter the Amount taken as a loan:</label>
+        <input type="number" id="inputPrincipalAmount" name="principalAmount" placeholder="Enter principal amount">
+        <br>
+        <label for="inputInterestRate">Interest Rate (% per annum):</label>
+        <input type="number" id="inputInterestRate" name="interestRate" placeholder="Enter the rate of interest">
+        <br>
+        <label for="inputLoanTerm">Loan Term (in years):</label>
+        <input type="number" id="inputLoanTerm" name="loanTerm" placeholder="Enter loan term">
+        <br>
+        <button onclick="calculateMonthlyPay()">Calculate EMI</button>
+    </div>
+
+    <div>
+        <h3>Loan Status</h3>
+        <label for="inputEmisPaid">Number of EMIs Paid:</label>
+        <input type="number" id="inputEmisPaid" name="emisPaid" placeholder="Enter number of EMIs paid">
+        <br>
+        <button onclick="checkloanStatus()">Check Loan Status</button>
+    </div>
+
+    <h3>Results:</h3>
+    <p id="emiResult"></p>
+    <p id="loanStatus"></p>
+
+</body>
+</html>
