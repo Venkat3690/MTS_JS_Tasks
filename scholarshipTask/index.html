@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scholarship Eligibility Site</title>
+</head>
+<body>
+    <h2></h2>
+    <div>
+        <label for="inputStudentName">Enter the name of the student:</label>
+        <input type="text" id="inputStudentName" name="studentName" placeholder="enter student name"><br><br>
+        <label for="inputSemester">Enter the Semester that student studying:</label>
+        <input type="number" id="inputSemester" name="Semester" placeholder="enter the Semester"><br><br>
+        <label for="inputSgpa">Enter the SGPA of a student:</label>
+        <input type="number" id="inputSgpa" name="sgpa" placeholder="enter sgpa"><br><br>
+    </div>
+    <button onclick="checkEligibility()">Check Eligibility</button>
+    <p id="result"></p>
+    <script src="script.js"></script>
+</body>
+</html>
