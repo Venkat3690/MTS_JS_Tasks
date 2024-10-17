@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Task</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <label for="inputOperandOne">Enter the First Operand: </label>
+    <input type="number" id="inputOperandOne" name="operandOne"><br><br>
+    <label for="inputOperandTwo">Enter the Second Operand: </label>
+    <input type="number" id="inputOperandTwo" name="operandTwo"><br><br>
+    <div>
+        <button onclick="addition()">+</button>
+        <button onclick="subtraction()">-</button>
+        <button onclick="multiplication()">*</button>
+        <button onclick="division()">/</button>
+        <button onclick="modulus()">%</button>
+    </div>
+    <p id="result"></p>
+</body>
+</html>

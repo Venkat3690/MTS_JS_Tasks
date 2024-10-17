@@ -1,5 +1,5 @@
 function actualPrice(){
-    let costPrice=document.getElementById("costPrice").value;
+    let costPrice=parseFloat(document.getElementById("costPrice").value);
     discount=0.2;
     let sellingPrice = costPrice-(costPrice * discount);
     var resultDiv = document.createElement("div");
